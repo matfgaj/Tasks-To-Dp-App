@@ -9,41 +9,48 @@ body{
     background-color: rgb(77, 77, 77);
 }
 
+.wraper{
+    position: relative;
+}
+
 .container {
     background-color: #eee5de;
-    position: relative;
     font-family: 'Jost', sans-serif;
     width: 90vw;
     margin: 5vh 5vw 1vh 5vw;
     padding-bottom: 5vh;
-    height: 95vh;
+    height: 94vh;
+}
+div.topSide{
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+.inptsnbtns{
+    position: absolute;
+    right: 5%;
+    top:95%;
 }
 
-.container h1 {
+.container div.topSide h1 {
     font-weight: 50;
     font-size: 5rem;
     font-style: italic;
     width: auto;
 }
 
-.container h1:nth-child(1) {
-    text-align: center;
-}
-
-.inptsnbtns{
+.container div.topSide h1:nth-child(1) {
     position: absolute;
-    right: 10%;
-    top: 20%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-
-
-
-h1.HowManyTasks {
+.container div.topSide h1.HowManyTasks {
     font-size: 4rem;
     position: absolute;
-    left: 10%;
-    top: 20%;
+    left: 5%;
+    top:80%;
 }
 
 span {
@@ -51,11 +58,11 @@ span {
 }
 
 
-button {
+button#addBtn, li.listElement button {
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;
-    margin: 0 0.3em 0.3em 0;
+    margin: 0 10px;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
@@ -81,12 +88,13 @@ button:hover {
 }
 ul.tasks {
     position: absolute;
-    top: 30%
-    ;
+    padding-left: 5vw;
+    top:40%;
+    width: 90vw;
 }
 ul.tasks li.listElement{
-text-align: right;
 margin: 1rem;
+font-size: 1.5rem;
 }
 
 ul.tasks li.listElement button {

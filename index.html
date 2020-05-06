@@ -13,22 +13,25 @@
 
 <body>
     <form class="container" action="">
-        <h1>Your to do list</h1>
-        <h1 class="HowManyTasks">Still <span>0</span> tasks to do.</h1>
-        <div class="inptsnbtns">
-            <div class="form__group field">
-                <input type="text" class="form__field" placeholder="What are you looking for?" name="name"
-                    id='filter' />
-                <label for="name" class="form__label">Search</label><i class="fas fa-search"></i>
-            </div>
-
-            <div class="form__group field">
-                <input type="text" class="form__field" placeholder="Your Task" name="name" id='add' />
-                <label for="name" class="form__label">Your Task</label>
-                <button id='addBtn'>Add Task</button>
+        <div class="topSide">
+            <h1>Your to do list</h1>
+            <h1 class="HowManyTasks">Still <span>0</span> tasks to do.</h1>
+            <div class="inptsnbtns">
+                <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="What are you looking for?" name="name"
+                        id='filter' />
+                    <label for="name" class="form__label">Search</label><i class="fas fa-search"></i>
+                </div>
+                <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="Your Task" name="name" id='add' />
+                    <label for="name" class="form__label">Your Task</label>
+                    <button id='addBtn'>Add Task</button>
+                </div>
             </div>
         </div>
-        
+
+
+
         <ul class="tasks">
         </ul>
     </form>
